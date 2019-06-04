@@ -1,0 +1,192 @@
+* {
+	margin:0;
+	padding:0;
+}
+/*清除高度塌陷*/
+.fpc_clear_fix:before,.fpc_clear_fix:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+/*商务通整体*/
+#fpc_business {
+	width:50px;
+	position:fixed;
+	z-index:2147483647;
+	right:20px;
+	bottom:12%;
+}
+/*返回主页div*/
+.fpc_all {
+	width:50px;
+	height:50px;
+	/*border:1px solid #ff6800;*/
+	margin-bottom:10px;
+}
+.fpc_all a {
+	display:block;
+	height:50px;
+}
+.fpc_home {
+	background:#FF6800 url(/img/sprite.png) 0px no-repeat;
+	/*background-position:-48px;
+	*/
+}
+.fpc_email {
+	position:relative;
+	background:#FF6800 url(/img/sprite.png) -100px no-repeat;
+	/*background-position:-144px;
+	*/
+}
+#fpc_mailTxt {
+	position:absolute;
+	top:0px;
+	left:-125px;
+	width:125px;
+	height:50px;
+	/*background-color:#4f95c9;*/
+	background:#4f95c9 url(/img/email_txt.png) no-repeat;
+	display:none;
+}
+.fpc_chat {
+	background:#FF6800 url(/img/chat.gif) center no-repeat;
+}
+.fpc_chat_txt {
+	background:#FF6800 url(/img/sprite.png) -200px no-repeat;
+}
+.fpc_star {
+	background:#FF6800 url(/img/sprite.png) -250px no-repeat;
+	/*background-position:-288px;
+	*/
+}
+.fpc_up {
+	display:block;
+	margin-top:70px;
+	background:#FF6800 url(/img/sprite.png) -350px no-repeat;
+	/*background-position:-384px;
+	*/
+}
+#fpc_mobile_emailTxt {
+	display:none;
+}
+/*悬浮留言板*/
+#fpc_messageBoard *{
+	padding: 0;
+	margin: 0;
+	font: normal 12px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#fpc_messageBoard{
+	display: none;
+	position: fixed;
+	z-index:2147483647;
+	max-width: 300px;
+	top: 0px;
+	bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 410px;
+    margin: auto;
+	background-color: #D2E9FF;
+}
+#fpc_close_board{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background:#C0E1FF url(/img/sprite.png) -450px 0px no-repeat;
+}
+#fpc_messageBoard h2{
+	padding: 5px;
+	font: normal 24px/24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #C0E1FF;
+}
+#fpc_messageBoard h2>span{
+	display: block;
+    font: normal 12px/15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#fpc_messageBoard form{
+	max-width: 280px;
+	margin: 10px auto;
+}
+#fpc_messageBoard table{
+	width: 100%;
+	border-collapse: collapse;
+}
+#fpc_messageBoard table td{
+	color: #000;
+	padding: 4px !important;
+	border: 1px solid #cccccc !important;
+}
+#fpc_messageBoard table select,
+#fpc_messageBoard table input,
+#fpc_messageBoard table textarea{
+	width: 100%;
+	color: #888;
+	border: 1px solid #C5E2FF;
+	padding: 1px !important;
+	background: #FBFBFB;
+	font: normal 12px/15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#fpc_messageBoard textarea{
+	height: 80px;
+	overflow: auto;
+	resize: none;
+}
+.fpc_red_must{
+	font-weight: bolder;
+	color: red;
+}
+#fpc_message_submit{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	outline: none; 
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background: #ee6123;
+    font: normal 12px/15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#fpc_message_submit:hover{
+	background-color: #e45212;
+}
+/*--------------------手机版--------------------*/
+@media only screen and (max-width:600px) {
+	/*商务通整体*/
+#fpc_business {
+	width:100%;
+	right:0;
+	bottom:0;
+	background-color:#FF6800;
+	opacity:0.8;
+}
+#fpc_center_div {
+	width:250px;
+	margin:0 auto;
+}
+/*返回主页div*/
+.fpc_all {
+	float:left;
+	margin-bottom:0;
+}
+.fpc_up {
+	display:block;
+	margin-top:0px;
+}
+#fpc_mobile_emailTxt {
+	display:block;
+	height: 25px;
+	background:#4f95c9 url(/img/bottom_email.png) center no-repeat;
+}
+#fpc_mobile_emailTxt a {
+	display:block;
+	height: 25px;
+}
+}
+#parameter,.message{
+	overflow: auto !important;
+}
