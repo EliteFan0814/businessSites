@@ -28,13 +28,13 @@
 	height:50px;
 }
 .fpc_home {
-	background:#FF6800 url(./img/sprite.png) 0px no-repeat;
+	background:#FF6800 url(../img/sprite.png) 0px no-repeat;
 	/*background-position:-48px;
 	*/
 }
 .fpc_email {
 	position:relative;
-	background:#FF6800 url(./img/sprite.png) -100px no-repeat;
+	background:#FF6800 url(../img/sprite.png) -100px no-repeat;
 	/*background-position:-144px;
 	*/
 }
@@ -45,24 +45,24 @@
 	width:125px;
 	height:50px;
 	/*background-color:#4f95c9;*/
-	background:#4f95c9 url(./img/email_txt.png) no-repeat;
+	background:#4f95c9 url(../img/email_txt.png) no-repeat;
 	display:none;
 }
 .fpc_chat {
-	background:#FF6800 url(./img/chat.gif) center no-repeat;
+	background:#FF6800 url(../img/chat.gif) center no-repeat;
 }
 .fpc_chat_txt {
-	background:#FF6800 url(./img/sprite.png) -200px no-repeat;
+	background:#FF6800 url(../img/sprite.png) -200px no-repeat;
 }
 .fpc_star {
-	background:#FF6800 url(./img/sprite.png) -250px no-repeat;
+	background:#FF6800 url(../img/sprite.png) -250px no-repeat;
 	/*background-position:-288px;
 	*/
 }
 .fpc_up {
 	display:block;
 	margin-top:70px;
-	background:#FF6800 url(./img/sprite.png) -350px no-repeat;
+	background:#FF6800 url(../img/sprite.png) -350px no-repeat;
 	/*background-position:-384px;
 	*/
 }
@@ -95,7 +95,7 @@
 	height: 20px;
 	width: 20px;
 	cursor: pointer;
-	background:#C0E1FF url(./img/sprite.png) -450px 0px no-repeat;
+	background:#C0E1FF url(../img/sprite.png) -450px 0px no-repeat;
 }
 #fpc_messageBoard h2{
 	padding: 5px;
@@ -180,7 +180,7 @@
 #fpc_mobile_emailTxt {
 	display:block;
 	height: 25px;
-	background:#4f95c9 url(./img/bottom_email.png) center no-repeat;
+	background:#4f95c9 url(../img/bottom_email.png) center no-repeat;
 }
 #fpc_mobile_emailTxt a {
 	display:block;
